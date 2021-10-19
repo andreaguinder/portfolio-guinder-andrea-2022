@@ -1,0 +1,79 @@
+h4{
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+.form__contact{
+    color: white;
+    backdrop-filter: blur(0.5rem);
+    background-color: rgba(0, 0, 0, 0.671);
+    border-radius: 5px;
+    margin-top: 0%; 
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    box-shadow: 0px 5px 5px rgba(29, 29, 29, 0.377), 0px -5px 5px rgba(32, 32, 32, 0.329);
+}
+
+.contact__h5{
+    font-weight: bold;
+}
+
+
+fieldset{
+    border: 2px solid white;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+.modalContainerRutinas{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.767);
+    background-size: contain;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+}
+
+.modalRutinasActive{
+    visibility: visible;
+    opacity: 1;
+    z-index: 100;
+}
+/*
+.modalRutinas{
+    color: rgb(0, 0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    width: 95%;
+    height: 95%;
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 1rem;
+    margin: auto;
+    overflow-y: scroll;
+}
+*/
+.modalForm{
+    color: rgb(0, 0, 0);
+    background-color: white;
+    background-size: contain;
+    width: 50%;
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 1rem;
+    margin: auto;
+}

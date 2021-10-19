@@ -1,0 +1,195 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-image: url(../images/probando-fondo.jpg);
+    background-size: cover;
+    background-position: center;   
+    background-repeat: no-repeat;
+}
+
+@import "index";
+
+
+.mainSpace{
+    margin-top: 3rem;
+}
+
+.container-nav{
+    width: 95%;
+    max-width: 60rem;
+    margin: 0 auto;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.377), 0px -5px 5px rgba(0, 0, 0, 0.329);
+}
+
+header{
+    background-color: rgba(0, 0, 0, 0.596);
+    backdrop-filter: blur(0.5rem);
+    border: 1px solid rgb(0, 0, 0);
+    height: 4rem;
+    padding: 1rem 0;
+    position: relative;
+    z-index: 100;
+}
+
+header::after{
+    content:"";
+    clear: both;
+    display: block;
+
+}
+
+.logo{
+    float: left;
+    margin-top: -0.75rem;
+    margin-left: 0.25rem;
+}
+
+.site__nav{
+    top: 100%;
+    right: 0%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.596);
+    clip-path: circle(0 at top right);
+    transition: clip-path ease-in-out 0.5s;
+}
+
+.site__navAbrir{
+    clip-path: circle(150% at top right);
+}
+
+.site__nav ul{
+    margin: 0;
+    padding: 0%;
+    list-style: none;
+}
+
+.site__nav li{
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.site__nav li:last-child{
+    border-bottom: none;
+}
+
+.site__nav a{
+    color: white;
+    display: block;
+    padding: 1rem 1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+.site__nav a:hover{
+    border: 1px solid rgba(255,255,255,05);
+    color: rgb(143, 142, 142);
+    font-weight: bold;
+}
+
+.site__nav a:focus{
+    background-color: rgba(196, 194, 194, 0.356);
+    border: 1px solid rgba(255,255,255,05);
+    color: rgb(255, 111, 212);
+}
+
+.site__nav--icon{
+    display: inline-block;
+    font-size: 0.9rem;
+    margin-right: 1.50rem;
+    width: 3rem;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.616);
+}
+
+// el menu hamburguesa
+.menu-toggle{
+    backdrop-filter: blur(15rem);
+    border: 2px solid rgba(255,255,255,05);
+    border-radius: 3px;
+    padding: 1.2rem 1rem;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
+.menu-abierto .menu-hamburguesa{
+    transform: rotate(45deg);
+}
+
+.menu-abierto .menu-hamburguesa::before{
+    opacity: 0;
+}
+
+.menu-abierto .menu-hamburguesa::after{
+    transform: translateY(-0.25rem) rotate(-90deg);
+}
+.menu-hamburguesa,
+.menu-hamburguesa::before,
+.menu-hamburguesa::after{
+    content: "";
+    display: block;
+    background-color: white;
+    height: 0.3rem;
+    width: 1.5rem;
+    border-radius: 0.5rem;
+    transition: all ease-in-out 0.4s;
+}
+
+.menu-hamburguesa::before{
+    transform: translateY(-0.55rem);
+}
+
+.menu-hamburguesa::after{
+    transform: translateY(0.25rem);
+}
+
+@media only screen and (min-width: 767px){
+
+    header{
+        background-color: rgba(0, 0, 0, 0.596);
+        border: none;
+    }
+    .menu-toggle{
+        display: none;
+    }
+    .site__nav{
+        height: auto;
+        position: relative;
+        background-color: rgba(255, 255, 255, 0);
+        float: right;
+        margin-top: -3rem;
+        margin-right: 1rem;
+        clip-path: initial;
+        text-align: center;
+    }
+
+    .site__nav li{
+        display: inline-block;
+        border: none;
+        
+    }
+    .site__nav a{
+        padding: 0;
+        margin-top: 1.5rem;
+        margin-left: 1rem;
+    }
+    
+    .site__nav--icon{
+        display: none;
+    }
+
+    .site__nav a:hover,
+    .site__nav a:focus{
+        background-color: transparent;
+        border: none;
+    }
+
+}
+
+@import "contact";
+@import "aboutme";
+@import "web";

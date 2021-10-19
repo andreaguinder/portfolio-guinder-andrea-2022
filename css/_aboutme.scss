@@ -1,0 +1,75 @@
+.contBlurSobre{
+    background-size: contain;
+    width: 95%;
+    height: fit-content;
+    margin: 3rem auto;
+    padding: 1rem;
+    position: center;
+    backdrop-filter: blur(0.8rem);
+    z-index: 0;
+    border-radius: 0.25rem;
+    border: 0.15rem solid rgb(0, 0, 0);
+    box-shadow: 10px 10px 5px rgba(29, 29, 29, 0.247), 0px -10px 5px rgba(32, 32, 32, 0.199);
+}
+
+.containerSobreMi{
+    background-color: rgba(0, 0, 0, 0.39);
+    background-size: contain;
+    width: 100%;
+    height: fit-content;
+    position: center;
+}
+
+.flex__sobremi{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.flex__sobremi--hijo{
+    width: 360px;
+    text-align: center;
+    animation-duration: 2s;
+    align-content: space-around;
+    padding: 1rem;
+
+
+    img{
+        background-size: contain;
+        width: 100%;
+    }
+
+    .contFotoMia{
+        height: 100%;
+        flex-basis: 100%;
+        margin: auto;
+        justify-content: space-around;
+        padding: 10%;
+        background-color: rgba(134, 133, 133, 0.384);
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 0.25rem;
+        align-items: center;
+    }
+                h1{
+                    text-align: center;
+                    color: rgb(255, 131, 199);
+                    font-weight: bold;
+                }
+                p{
+                    text-align: left;
+                    color: rgb(255, 255, 255);
+                    font-size: 14px;
+                }
+}
+
+#logosSobreMi{
+    height: 100%;
+    flex-basis: 100%;
+    justify-content: space-around;
+    padding: 10%;
+    background-color: rgba(134, 133, 133, 0.384);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 0.25rem;
+    align-items: center;
+}
