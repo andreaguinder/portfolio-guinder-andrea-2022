@@ -10,11 +10,21 @@
     height: fit-content;
     margin: 3rem auto;
     position: center;
-    backdrop-filter: blur(0.8rem);
+    backdrop-filter: blur(0.5rem);
     z-index: 0;
     border-radius: 0.25rem;
     border: 0.15rem solid rgb(0, 0, 0);
     box-shadow: 10px 10px 5px rgba(29, 29, 29, 0.247), 0px -10px 5px rgba(32, 32, 32, 0.199);
+}
+
+.contBlurNegro{
+    background-size: contain;
+    width: 100%;
+    height: fit-content;
+    position: center;
+    background-color: $color4;
+    z-index: 0;
+    border-radius: 0.25rem;
 }
 
 .containerServicios{
@@ -46,11 +56,11 @@
                     margin-bottom: 0.5rem;
                 }
                 i:hover{
-                    color: rgb(255, 131, 199);
+                    color: $color2;
                 }
                 h4{
                     text-align: center;
-                    color: rgb(255, 131, 199);
+                    color: $color1;
                     font-weight: bold;
                 }
                 p{
@@ -59,11 +69,9 @@
                     font-size: 14px;
                 }
                 .pinkLine{
-                    color: rgb(255, 131, 199);
+                    color: $color1;
                     font-size: 1rem;
                     text-align: center;
                 }
 
 }
-
-@import "footer";

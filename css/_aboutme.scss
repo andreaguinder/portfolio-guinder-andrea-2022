@@ -13,7 +13,7 @@
 }
 
 .containerSobreMi{
-    background-color: rgba(0, 0, 0, 0.39);
+    background-color: $color4;
     background-size: contain;
     width: 100%;
     height: fit-content;
@@ -46,7 +46,7 @@
         margin: auto;
         justify-content: space-around;
         padding: 10%;
-        background-color: rgba(134, 133, 133, 0.384);
+        backdrop-filter: blur(0.5rem);
         border: 2px solid rgb(255, 255, 255);
         border-radius: 0.25rem;
         align-items: center;
@@ -68,7 +68,7 @@
     flex-basis: 100%;
     justify-content: space-around;
     padding: 10%;
-    background-color: rgba(134, 133, 133, 0.384);
+    backdrop-filter: blur(0.5rem);
     border: 2px solid rgb(255, 255, 255);
     border-radius: 0.25rem;
     align-items: center;

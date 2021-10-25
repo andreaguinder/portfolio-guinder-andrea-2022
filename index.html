@@ -18,10 +18,12 @@
 </head>
 
 <body>
-    <header id="prueba">
+    <header>
+        <div  id="headerEfecto">
         <div class="container-nav">
-            <div class="logo"><img src="./images/logo-ag.png" style="width: 120px"></div>
-        </div>
+            <div class="logo"> <h1 id="nombreAndy">#MeDicenAndy</h1>
+            </div>
+
         <nav id="site__nav" class="site__nav">
             <ul>
                 <li><a href=""><i class="fa fa-home site__nav--icon"></i>INICIO</a></li>
@@ -35,12 +37,15 @@
         <div id="menu-toggle" class="menu-toggle" onclick="cambiarClaseMenu()">
             <div class="menu-hamburguesa"></div>
         </div>
+    </div>
+    </div>
     </header>
     <main>
         <section>
             <img class="heroIndex" src="./images/hero-portolio.jpg">
         </section>
         <section id="serviciosIndex" class="containerServicios contBlur">
+            <div class=" contBlurNegro">
             <div class="flex__servicios">
                 <div class="flex__servicios--hijo animate__animated animate__fadeInLeft">
                     <i class="fa fa-pen-nib"></i>
@@ -79,9 +84,11 @@
                     <p class="pinkLine">_______________</p>
                 </div>
             </div>
+        </div>
         </section>
     </main>
     <footer>
+        <div id="footerEfecto">
         <div>
         <div>
             <a target="_blank" class="facebook" href="https://www.facebook.com/profile.php?id=100010447723135"><i class="fab fa-facebook"></i></a>
@@ -92,6 +99,7 @@
         <p> Copyright © | 2021 | Todos los Derechos Reservados
             Diseño y Desarrollo por <a href="https://andreabelenguinder.wixsite.com/misitio" target="_blank">Andrea
                 Guinder</a></p>
+        </div>
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
