@@ -14,8 +14,6 @@ body{
 @import "variables";
 @import "index";
 
-
-
 .mainSpace{
     margin-top: 3rem;
 }
@@ -26,25 +24,19 @@ body{
     margin: 0 auto;
 }
 
-#headerEfecto{
-    background-color: $color4;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.692), 0px -5px 5px rgba(0, 0, 0, 0.521);
-}
-
 header{
-    background-image:  url(../images/probando-fondo.jpg);
+    background-image:  url(../images/probando-fondo4.jpg);
+    background-position-x: center;
     border: 1px solid rgb(0, 0, 0);
     height: 4rem;
     padding: 1rem 0;
     position: relative;
-    z-index: 100;
 }
 
 header::after{
     content:"";
     clear: both;
     display: block;
-
 }
 
 .logo{
@@ -223,4 +215,13 @@ header::after{
 @import "contact";
 @import "aboutme";
 @import "web";
+@import "dg";
+@import "mkt";
 @import "footer";
+
+.headerEfecto{
+    color: $color3;
+    background-color: $color4;
+    width: 100%;
+    z-index: 100;
+}

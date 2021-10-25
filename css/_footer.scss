@@ -1,11 +1,8 @@
-#footerEfecto{
-    background-color: $color4;
-    width: 100%;
-}
-
 footer{
-    background-image:  url(../images/probando-fondo.jpg);
+    color: $color3;
+    background-image:  url(../images/probando-fondo4.jpg);
     background-size: contein;
+    background-position-x: center;
     width: 100%;
     
     div{
@@ -20,11 +17,11 @@ footer{
         p{
             text-align: center;
             align-content: space-around;
-            color: white;
+            color: $color3;
 
             a{
                 text-decoration: none;
-                color: white;
+                color: $color3;
             }
 
             a:hover{
