@@ -5,29 +5,28 @@
 }
 @import "variables";
 
-html{
-    overflow-y: scroll;
-}
 
-html::-webkit-scrollbar{
-    width: 0.5rem;
-    background-color: $color4;
-    border-radius: 3rem;
-}
-
-html::-webkit-scrollbar-thumb{
-    background-color: $color4;
-    height: 2rem;
-    border-radius: 3rem;
-}
 
 body{
     background-image: url(../images/fondo3d.jpg);
     background-size: 100%;
     background-position: center;   
     background-repeat: repeat-y;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
+body::-webkit-scrollbar{
+    width: 0.5rem;
+    background-color: $color4;
+    border-radius: 3rem;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: $color4;
+    height: 2rem;
+    border-radius: 3rem;
+}
 
 @import "index";
 

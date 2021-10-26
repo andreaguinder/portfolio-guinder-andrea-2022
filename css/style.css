@@ -5,27 +5,25 @@
   padding: 0%;
 }
 
-html {
-  overflow-y: scroll;
-}
-
-html::-webkit-scrollbar {
-  width: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.596);
-  border-radius: 3rem;
-}
-
-html::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.596);
-  height: 2rem;
-  border-radius: 3rem;
-}
-
 body {
   background-image: url(../images/fondo3d.jpg);
   background-size: 100%;
   background-position: center;
   background-repeat: repeat-y;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.596);
+  border-radius: 3rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.596);
+  height: 2rem;
+  border-radius: 3rem;
 }
 
 .headerEfecto {
