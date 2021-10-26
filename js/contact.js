@@ -22,19 +22,19 @@ contenedorformularioContacto.appendChild(formularioContacto);
 
 // Modal cuando la persona toca Enviar
 
-const abrirModalDeRutina = document.getElementById("enviar")
-const cerrarRutina = document.getElementById("cerrarRutina")
-const modalContainerRutinas = document.getElementsByClassName("modalContainerRutinas")[0]
+const abrirModal = document.getElementById("enviar")
+const cerrarModal = document.getElementById("cerrarModal")
+const modalContainer = document.getElementsByClassName("modalContainer")[0]
 
-abrirModalDeRutina.addEventListener("click", (e) =>{
+abrirModal.addEventListener("click", (e) =>{
     e.preventDefault();
         // si el usuario no ingresa su nombre y mail no se abre el modal de que fue enviado
         if((document.getElementById("nombreUsuario").value === "") || (document.getElementById("emailUsuario").value === "")){
             return;
         }
-    modalContainerRutinas.classList.toggle("modalRutinasActive")
+    modalContainer.classList.toggle("modalActive")
 })
 
-cerrarRutina.addEventListener("click", () =>{
-    modalContainerRutinas.classList.toggle("modalRutinasActive")
+cerrarModal.addEventListener("click", () =>{
+    modalContainer.classList.toggle("modalActive")
 })
