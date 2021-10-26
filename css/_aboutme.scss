@@ -53,11 +53,20 @@
                     text-align: center;
                     color: rgb(255, 131, 199);
                     font-weight: bold;
+                    padding-top: 10%;
                 }
                 p{
                     text-align: left;
                     color: rgb(255, 255, 255);
-                    font-size: 14px;
+                    font-size: 0.85rem;
+                    font-weight: normal;
+                    text-justify: justify;
+                    padding-top: 5%;
+                }
+
+                a{
+                    text-decoration: none;
+                    color: $color1;
                 }
 }
 

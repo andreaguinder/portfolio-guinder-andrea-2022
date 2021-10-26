@@ -16,7 +16,8 @@ html::-webkit-scrollbar{
 }
 
 html::-webkit-scrollbar-thumb{
-    background-color: $color2;
+    background-color: $color4;
+    height: 2rem;
     border-radius: 3rem;
 }
 
@@ -76,16 +77,21 @@ header::after{
     clip-path: circle(0 at top right);
     transition: clip-path ease-in-out 0.5s;
     backdrop-filter: blur(0.5rem);
+    z-index: 100;
 }
 
 .site__navAbrir{
     clip-path: circle(150% at top right);
+    height: 20.2rem;
     z-index: 100;
 }
 
 .site__nav ul{
     padding-top: 0%;
+    padding-left: 2%;
+    padding-bottom: 5%;
     list-style: none;
+    width: 12rem;
 }
 
 .site__nav li{
@@ -216,6 +222,10 @@ header::after{
     .site__nav ul{
         padding-top: 5%;
         list-style: none;
+        padding-left: 0%;
+        padding-bottom: 0%;
+        width: 100%;
+
     }
 
 }

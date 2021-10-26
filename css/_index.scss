@@ -47,11 +47,12 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
 }
 
 .flex__servicios--hijo{
-    width: 360px;
-    padding: 0.5rem;
+    width: 320px;
+    padding: 1%;
     text-align: center;
     animation-duration: 2s;
     align-content: space-around;

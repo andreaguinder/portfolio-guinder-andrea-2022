@@ -65,3 +65,13 @@ fieldset{
     padding: 1rem;
     margin: auto;
 }
+
+.servOfrecidos{
+    color: $color1;
+    background-color: $color1;
+}
+
+.form-check-input:checked {
+    background-color: $color1;
+    border-color: $color1;
+}

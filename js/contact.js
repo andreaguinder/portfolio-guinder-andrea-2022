@@ -11,7 +11,7 @@ const contenidoSuperior = {
 };
 
 formularioContacto.innerHTML = `
-                    <div class= "text-center">
+                    <div class= "text-center mx-3">
                     <h4>${contenidoSuperior.titulo}</h4>
                     <p>${contenidoSuperior.texto}</p>
                     </div>

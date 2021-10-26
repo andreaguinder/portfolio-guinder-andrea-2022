@@ -16,7 +16,8 @@ html::-webkit-scrollbar {
 }
 
 html::-webkit-scrollbar-thumb {
-  background-color: #ad0963;
+  background-color: rgba(0, 0, 0, 0.596);
+  height: 2rem;
   border-radius: 3rem;
 }
 
@@ -83,11 +84,12 @@ body {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
 }
 
 .flex__servicios--hijo {
-  width: 360px;
-  padding: 0.5rem;
+  width: 320px;
+  padding: 1%;
   text-align: center;
   -webkit-animation-duration: 2s;
           animation-duration: 2s;
@@ -169,17 +171,22 @@ header::after {
   transition: clip-path ease-in-out 0.5s, -webkit-clip-path ease-in-out 0.5s;
   -webkit-backdrop-filter: blur(0.5rem);
           backdrop-filter: blur(0.5rem);
+  z-index: 100;
 }
 
 .site__navAbrir {
   -webkit-clip-path: circle(150% at top right);
           clip-path: circle(150% at top right);
+  height: 20.2rem;
   z-index: 100;
 }
 
 .site__nav ul {
   padding-top: 0%;
+  padding-left: 2%;
+  padding-bottom: 5%;
   list-style: none;
+  width: 12rem;
 }
 
 .site__nav li {
@@ -314,6 +321,9 @@ header::after {
   .site__nav ul {
     padding-top: 5%;
     list-style: none;
+    padding-left: 0%;
+    padding-bottom: 0%;
+    width: 100%;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -396,6 +406,16 @@ fieldset {
   margin: auto;
 }
 
+.servOfrecidos {
+  color: #ff6fd4;
+  background-color: #ff6fd4;
+}
+
+.form-check-input:checked {
+  background-color: #ff6fd4;
+  border-color: #ff6fd4;
+}
+
 .contBlurSobre {
   width: 90%;
   height: -webkit-fit-content;
@@ -456,11 +476,19 @@ fieldset {
   text-align: center;
   color: #ff83c7;
   font-weight: bold;
+  padding-top: 10%;
 }
 .flex__sobremi--hijo p {
   text-align: left;
   color: white;
-  font-size: 14px;
+  font-size: 0.85rem;
+  font-weight: normal;
+  text-justify: justify;
+  padding-top: 5%;
+}
+.flex__sobremi--hijo a {
+  text-decoration: none;
+  color: #ff6fd4;
 }
 
 #logosSobreMi {
