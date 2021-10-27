@@ -401,11 +401,19 @@ fieldset {
   color: black;
   background-color: white;
   background-size: contain;
-  width: 50%;
+  width: 70%;
   border-radius: 0.5rem;
   text-align: center;
-  padding: 1rem;
+  padding: 0.25rem;
   margin: auto;
+  font-size: 1rem;
+}
+.modalForm button {
+  border: none;
+}
+.modalForm button .fas {
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 .servOfrecidos {
@@ -662,6 +670,34 @@ fieldset {
 .h5__cards {
   color: #ff83c7;
   font-weight: bold;
+}
+
+.linea {
+  background-color: #ad0963;
+  height: 0.25rem;
+  width: 100%;
+  display: block;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.galeriaDg {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  width: 95%;
+  margin: auto;
+  grid-gap: 0.25rem;
+}
+
+.galeriaDg img {
+  width: 100%;
+}
+
+.galeriaDg img:hover {
+  transform: scale(1.02);
+  transition: 0.5s;
+  filter: none;
+  box-shadow: 5px 5px 5px 1px rgba(43, 42, 42, 0.774);
 }
 
 /*--------------Productos: Galería con GRID: Info general-------------*/
