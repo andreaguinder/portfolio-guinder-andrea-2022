@@ -71,14 +71,14 @@ const validarDato = (usosPermitidos, input, dato,) => {
         document.querySelector(`#entrada__${dato} i`).classList.add('fa-check-circle');
         document.querySelector(`#entrada__${dato} i`).classList.remove('fa-times-circle');
         document.querySelector(`#entrada__${dato} .formulario__input-error`).classList.remove('formulario__input-error-activo');
-        campos[dato] = true;
+        datos[dato] = true;
     } else {
         document.getElementById(`entrada__${dato}`).classList.add('formulario__entrada-incorrecto');
         document.getElementById(`entrada__${dato}`).classList.remove('formulario__entrada-correcto');
         document.querySelector(`#entrada__${dato} i`).classList.add('fa-times-circle');
         document.querySelector(`#entrada__${dato} i`).classList.remove('fa-check-circle');
         document.querySelector(`#entrada__${dato} .formulario__input-error`).classList.add('formulario__input-error-activo');
-        campos[dato] = false;
+        datos[dato] = false;
 
     }
 }
