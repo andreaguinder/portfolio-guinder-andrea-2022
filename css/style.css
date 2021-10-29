@@ -489,8 +489,7 @@ p {
 }
 
 .formulario__mensaje {
-  height: 45px;
-  line-height: 45px;
+  height: auto;
   padding: 20%;
   align-items: center;
   text-align: center;
