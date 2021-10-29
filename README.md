@@ -4,11 +4,11 @@
 
 ## ¿Quién soy?
 
-_Mi nombre es Andrea Guinder y Soy Diseñadora Gráfica, Community Manager y Desarrolladora Web. Actualmente me encuentro formándome como programadora. Este es mi Portfolio.
+Mi nombre es Andrea Guinder y Soy Diseñadora Gráfica, Community Manager y Desarrolladora Web. Actualmente me encuentro formándome como programadora. Este es mi Portfolio.
 
 ## Tecnologías utilizadas:
 
-_Este sitio web fue creado con: HTML5, CSS3, SASS y JavaScript.
+Este sitio web fue creado con: HTML5, CSS3, SASS y JavaScript.
 
 
 ## Información sobre el proyecto:
@@ -25,4 +25,6 @@ _Este sitio web fue creado con: HTML5, CSS3, SASS y JavaScript.
 
 ## Contactame:
 
-_Por información o servicios no dudes en contactarme a través de mis redes o el formulario de mi Portfolio.
+Por información o servicios no dudes en contactarme a través de mis redes o el formulario de mi Portfolio:
+
+### [CONTACTAME](https://andreaguinder.github.io/portfolio-guinderandrea/pages/contact.html)

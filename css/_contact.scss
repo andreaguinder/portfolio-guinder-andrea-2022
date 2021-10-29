@@ -90,7 +90,7 @@ p{
     cursor: pointer;
 }
 
-.formulario__grupo-input{
+.formulario__entrada-input{
     position: relative;
 }
 
@@ -172,21 +172,21 @@ p{
     padding: 5px;
 }
 
-.formulario__grupo-correcto .formulario__validacion-estado{
+.formulario__entrada-correcto .formulario__validacion-estado{
     color: $color1;
     opacity: 1;
 }
 
-.formulario__grupo-incorrecto .formulario__label{
+.formulario__entrada-incorrecto .formulario__label{
     color: $color1;
 }
 
-.formulario__grupo-incorrecto .formulario__validacion-estado{
+.formulario__entrada-incorrecto .formulario__validacion-estado{
     color: $color2;
     opacity: 1;
 }
 
-.formulario__grupo-incorrecto .formulario__input {
+.formulario__entrada-incorrecto .formulario__input {
     border: 3px solid $color2; 
 }
 

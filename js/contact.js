@@ -66,18 +66,18 @@ const validarFormulario = (e) => {
 
 const validarDato = (usosPermitidos, input, dato,) => {
     if (usosPermitidos.test(input.value)) {
-        document.getElementById(`grupo__${dato}`).classList.remove('formulario__grupo-incorrecto');
-        document.getElementById(`grupo__${dato}`).classList.add('formulario__grupo-correcto');
-        document.querySelector(`#grupo__${dato} i`).classList.add('fa-check-circle');
-        document.querySelector(`#grupo__${dato} i`).classList.remove('fa-times-circle');
-        document.querySelector(`#grupo__${dato} .formulario__input-error`).classList.remove('formulario__input-error-activo');
+        document.getElementById(`entrada__${dato}`).classList.remove('formulario__entrada-incorrecto');
+        document.getElementById(`entrada__${dato}`).classList.add('formulario__entrada-correcto');
+        document.querySelector(`#entrada__${dato} i`).classList.add('fa-check-circle');
+        document.querySelector(`#entrada__${dato} i`).classList.remove('fa-times-circle');
+        document.querySelector(`#entrada__${dato} .formulario__input-error`).classList.remove('formulario__input-error-activo');
         campos[dato] = true;
     } else {
-        document.getElementById(`grupo__${dato}`).classList.add('formulario__grupo-incorrecto');
-        document.getElementById(`grupo__${dato}`).classList.remove('formulario__grupo-correcto');
-        document.querySelector(`#grupo__${dato} i`).classList.add('fa-times-circle');
-        document.querySelector(`#grupo__${dato} i`).classList.remove('fa-check-circle');
-        document.querySelector(`#grupo__${dato} .formulario__input-error`).classList.add('formulario__input-error-activo');
+        document.getElementById(`entrada__${dato}`).classList.add('formulario__entrada-incorrecto');
+        document.getElementById(`entrada__${dato}`).classList.remove('formulario__entrada-correcto');
+        document.querySelector(`#entrada__${dato} i`).classList.add('fa-times-circle');
+        document.querySelector(`#entrada__${dato} i`).classList.remove('fa-check-circle');
+        document.querySelector(`#entrada__${dato} .formulario__input-error`).classList.add('formulario__input-error-activo');
         campos[dato] = false;
 
     }
@@ -116,8 +116,8 @@ async function handleSubmit(event) {
         formulario.reset();
 
         modalContainer.classList.toggle("modalActive")
-        document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
-            icono.classList.remove('formulario__grupo-correcto');
+        document.querySelectorAll('.formulario__entrada-correcto').forEach((icono) => {
+            icono.classList.remove('formulario__entrada-correcto');
         });
         
     } else {
