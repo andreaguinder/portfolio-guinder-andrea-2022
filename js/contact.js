@@ -21,14 +21,11 @@ contenedorformularioContacto.appendChild(formularioContacto);
 
 // VALIDACIÓN FORMULARIO
 
-
-
+// Modal para cuando el formulario es enviado
 
 const abrirModal = document.getElementById("enviar")
 const cerrarModal = document.getElementById("cerrarModal")
 const modalContainer = document.getElementsByClassName("modalContainer")[0]
-
-
 
 // FORMULARIO DE CONTACTO
 
@@ -36,14 +33,14 @@ const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
 const textareas = document.querySelectorAll('#formulario textarea');
 
-const expresiones = {
-    nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
-    telefono: /^\d{7,14}$/, // 7 a 14 numeros.
+const usosPermitidos = {
+    nombre: /^[a-zA-ZÀ-ÿ\s]{5,40}$/,
+    telefono: /^\d{7,14}$/,
     correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-    mensaje: /^[a-zA-ZÀ-ÿ\s-0-9_,.+-]{10,100}$/, // Letras, espacios, números, pueden llevar acentos.
+    mensaje: /^[a-zA-ZÀ-ÿ\s0-9_,.+-]{10,100}$/,
 }
 
-const campos = {
+const datos = {
     nombre: false,
     telefono: false,
     correo: false,
@@ -53,35 +50,35 @@ const campos = {
 const validarFormulario = (e) => {
     switch (e.target.name) {
         case "nombre":
-            validarCampo(expresiones.nombre, e.target, 'nombre')
+            validarDato(usosPermitidos.nombre, e.target, 'nombre')
             break;
         case "telefono":
-            validarCampo(expresiones.telefono, e.target, 'telefono')
+            validarDato(usosPermitidos.telefono, e.target, 'telefono')
             break;
         case "correo":
-            validarCampo(expresiones.correo, e.target, 'correo')
+            validarDato(usosPermitidos.correo, e.target, 'correo')
             break;
         case "mensaje":
-            validarCampo(expresiones.mensaje, e.target, 'mensaje')
+            validarDato(usosPermitidos.mensaje, e.target, 'mensaje')
             break;
     }
 }
 
-const validarCampo = (expresion, input, campo,) => {
-    if (expresion.test(input.value)) { //comprueba la expresion regular de usuario en el campo de usuario.
-        document.getElementById(`grupo__${campo}`).classList.remove('formulario__grupo-incorrecto');
-        document.getElementById(`grupo__${campo}`).classList.add('formulario__grupo-correcto');
-        document.querySelector(`#grupo__${campo} i`).classList.add('fa-check-circle');
-        document.querySelector(`#grupo__${campo} i`).classList.remove('fa-times-circle');
-        document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.remove('formulario__input-error-activo');
-        campos[campo] = true;
+const validarDato = (usosPermitidos, input, dato,) => {
+    if (usosPermitidos.test(input.value)) {
+        document.getElementById(`grupo__${dato}`).classList.remove('formulario__grupo-incorrecto');
+        document.getElementById(`grupo__${dato}`).classList.add('formulario__grupo-correcto');
+        document.querySelector(`#grupo__${dato} i`).classList.add('fa-check-circle');
+        document.querySelector(`#grupo__${dato} i`).classList.remove('fa-times-circle');
+        document.querySelector(`#grupo__${dato} .formulario__input-error`).classList.remove('formulario__input-error-activo');
+        campos[dato] = true;
     } else {
-        document.getElementById(`grupo__${campo}`).classList.add('formulario__grupo-incorrecto');
-        document.getElementById(`grupo__${campo}`).classList.remove('formulario__grupo-correcto');
-        document.querySelector(`#grupo__${campo} i`).classList.add('fa-times-circle');
-        document.querySelector(`#grupo__${campo} i`).classList.remove('fa-check-circle');
-        document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.add('formulario__input-error-activo');
-        campos[campo] = false;
+        document.getElementById(`grupo__${dato}`).classList.add('formulario__grupo-incorrecto');
+        document.getElementById(`grupo__${dato}`).classList.remove('formulario__grupo-correcto');
+        document.querySelector(`#grupo__${dato} i`).classList.add('fa-times-circle');
+        document.querySelector(`#grupo__${dato} i`).classList.remove('fa-check-circle');
+        document.querySelector(`#grupo__${dato} .formulario__input-error`).classList.add('formulario__input-error-activo');
+        campos[dato] = false;
 
     }
 }
@@ -96,32 +93,10 @@ textareas.forEach((textarea) => {
     textarea.addEventListener('blur', validarFormulario);
 });
 
-formulario.addEventListener('submit', (e) => {
-    e.preventDefault();
 
-    const terminos = document.getElementById('terminos');
-    if (campos.nombre && campos.correo && campos.telefono && campos.mensaje) {
-        formulario.reset();
+// Para que el formulario se envie a mi mail sin utilizar Backend
 
-        modalContainer.classList.toggle("modalActive")
-        document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
-            icono.classList.remove('formulario__grupo-correcto');
-        });
-        
-    } else {
-        document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
-        setTimeout(() => {
-            document.getElementById('formulario__mensaje').classList.remove('formulario__mensaje-activo');
-        }, 5000);
-    }
-});
-
-/*
-
-// ENVIO REAL DEL FORMULARIO SIN BACKEND
-const cerrarModal = document.getElementById("cerrarModal")
-const modalContainer = document.getElementsByClassName("modalContainer")[0]
-const $form = document.querySelector("#form");
+const $form = document.querySelector("#formulario");
 
 $form.addEventListener("submit", handleSubmit)
 
@@ -136,12 +111,23 @@ async function handleSubmit(event) {
         }
     });
 
-    if (response.ok) {
-        this.reset()
-        /////////////
+    if (datos.nombre && datos.correo && datos.telefono && datos.mensaje) {
+        response.ok;
+        formulario.reset();
+
         modalContainer.classList.toggle("modalActive")
+        document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
+            icono.classList.remove('formulario__grupo-correcto');
+        });
+        
+    } else {
+        document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
+        setTimeout(() => {
+            document.getElementById('formulario__mensaje').classList.remove('formulario__mensaje-activo');
+        }, 5000);
     }
-}*/
+}
+
 cerrarModal.addEventListener("click", () => {
     modalContainer.classList.toggle("modalActive")
 })

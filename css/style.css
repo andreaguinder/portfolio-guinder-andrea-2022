@@ -528,11 +528,6 @@ p {
   border: 3px solid #ad0963;
 }
 
-.recibir__novedades {
-  background-color: white;
-  color: white;
-}
-
 .recibir__novedades:focus {
   background-color: #ff6fd4;
   color: white;
