@@ -6,7 +6,7 @@
     padding-left: 0;
     display: flex;
     box-shadow: 0 3px 7px -1px rgba($color6, .1);
-    background: $color3;
+    background-color: $color3;
     line-height: 1.4;
     border-radius: 5px;
     overflow: hidden;
@@ -47,7 +47,7 @@
         left: -100%;
         margin: auto;
         transition: left .2s;
-        background: rgba($color6, .6);
+        background-color: rgba($color6, .6);
         color: $color1;
         padding: 10px;
         width: 100%;
@@ -69,7 +69,7 @@
     }
     .description {
         padding: 1rem;
-        background: $color3;
+        background-color: $color3;
         position: relative;
         z-index: 1;
 
@@ -120,7 +120,7 @@
             &:before {
                 position: absolute;
                 height: 5px;
-                background: $color6;
+                background-color: $color6;
                 width: 35px;
                 top: -0.75rem;
                 border-radius: 3px;
@@ -147,7 +147,7 @@
             &:before {
                 transform: skewX(-3deg);
                 content: "";
-                background: $color3;
+                background-color: $color3;
                 width: 30px;
                 position: absolute;
                 left: -10px;

@@ -168,11 +168,11 @@ header::after{
 }
 
 .menu-hamburguesa::before{
-    transform: translateY(contain);
+    transform: translateY(contain);//////toDO 0.25rem
 }
 
 .menu-hamburguesa::after{
-    transform: translateY(0.25rem);
+    transform: translateY(contain); //0.25rem
 }
 
 @media only screen and (min-width: 767px){
