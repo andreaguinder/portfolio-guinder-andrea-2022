@@ -248,7 +248,7 @@ header::after {
 }
 
 .menu-abierto .menu-hamburguesa::after {
-  transform: translateY(-0.25rem) rotate(-90deg);
+  transform: translateY(-0.35rem) rotate(-90deg);
 }
 
 .menu-hamburguesa,
@@ -264,7 +264,7 @@ header::after {
 }
 
 .menu-hamburguesa::before {
-  transform: translateY(-0.55rem);
+  transform: translateY(contain);
 }
 
 .menu-hamburguesa::after {
@@ -664,7 +664,7 @@ p {
   margin: auto;
   transition: left 0.2s;
   background: rgba(0, 0, 0, 0.6);
-  color: #ff83c7;
+  color: #ff6fd4;
   padding: 10px;
   width: 100%;
   font-size: 0.9rem;
@@ -701,7 +701,7 @@ p {
   text-align: right;
 }
 .blog-card .description .read-more a {
-  color: #ff83c7;
+  color: #ff6fd4;
   display: inline-block;
   position: relative;
 }
@@ -774,7 +774,7 @@ p {
 }
 
 .h5__cards {
-  color: #ff83c7;
+  color: #ff6fd4;
   font-weight: bold;
 }
 
