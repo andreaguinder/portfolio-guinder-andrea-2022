@@ -248,7 +248,7 @@ header::after {
 }
 
 .menu-abierto .menu-hamburguesa::after {
-  transform: translateY(-0.35rem) rotate(-90deg);
+  transform: translateY(-0.55rem) rotate(-90deg);
 }
 
 .menu-hamburguesa,
@@ -264,11 +264,11 @@ header::after {
 }
 
 .menu-hamburguesa::before {
-  transform: translateY(contain);
+  transform: translateY(0.25rem);
 }
 
 .menu-hamburguesa::after {
-  transform: translateY(contain);
+  transform: translateY(0.25rem);
 }
 
 @media only screen and (min-width: 767px) {
@@ -624,7 +624,7 @@ p {
 }
 
 .blog-card {
-  height: 280px;
+  height: 300px;
   width: 350px;
   padding-left: 0;
   display: flex;
@@ -1026,7 +1026,7 @@ p {
 footer {
   color: white;
   background-image: url(../images/probando-fondo4.jpg);
-  background-size: contain;
+  background-size: cover;
   background-position-x: center;
   width: 100%;
   box-shadow: 0px -5px 7px 0px rgba(59, 59, 59, 0.75);
