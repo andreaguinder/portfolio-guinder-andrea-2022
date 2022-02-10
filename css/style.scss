@@ -168,7 +168,7 @@ header::after{
 }
 
 .menu-hamburguesa::before{
-    transform: translateY(-0.55rem);
+    transform: translateY(contain);
 }
 
 .menu-hamburguesa::after{
