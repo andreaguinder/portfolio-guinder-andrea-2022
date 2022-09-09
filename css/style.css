@@ -30,7 +30,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .headerEfecto {
-  color: white;
+  color: rgb(255, 255, 255);
   background-color: rgba(0, 0, 0, 0.596);
   width: 100%;
 }
@@ -53,7 +53,7 @@ body::-webkit-scrollbar-thumb {
           backdrop-filter: blur(0.5rem);
   z-index: 0;
   border-radius: 0.25rem;
-  border: 0.15rem solid black;
+  border: 0.15rem solid rgb(0, 0, 0);
   box-shadow: 10px 10px 5px rgba(29, 29, 29, 0.247), 0px -10px 5px rgba(32, 32, 32, 0.199);
 }
 
@@ -99,24 +99,24 @@ body::-webkit-scrollbar-thumb {
 .flex__servicios--hijo i {
   justify-content: space-evenly;
   font-size: 3rem;
-  color: white;
+  color: rgb(255, 255, 255);
   margin-bottom: 0.5rem;
 }
 .flex__servicios--hijo i:hover {
-  color: #ad0963;
+  color: rgb(173, 9, 99);
 }
 .flex__servicios--hijo h4 {
   text-align: center;
-  color: #ff6fd4;
+  color: rgb(255, 111, 212);
   font-weight: bold;
 }
 .flex__servicios--hijo p {
   text-align: left;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 14px;
 }
 .flex__servicios--hijo .pinkLine {
-  color: #ff6fd4;
+  color: rgb(255, 111, 212);
   font-size: 1rem;
   text-align: center;
 }
@@ -134,7 +134,7 @@ body::-webkit-scrollbar-thumb {
 header {
   background-image: url(../images/probando-fondo4.jpg);
   background-position-x: center;
-  border: 1px solid black;
+  border: 1px solid rgb(0, 0, 0);
   height: 4rem;
   padding: 1rem 0;
   position: relative;
@@ -154,7 +154,7 @@ header::after {
 }
 
 .logo h1 {
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 1.5rem;
   margin-left: 1rem;
   margin-top: 0.75rem;
@@ -192,7 +192,7 @@ header::after {
 }
 
 .site__nav li {
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 .site__nav li:last-child {
@@ -200,7 +200,7 @@ header::after {
 }
 
 .site__nav a {
-  color: white;
+  color: rgb(255, 255, 255);
   display: block;
   padding: 1rem 1rem;
   text-transform: uppercase;
@@ -209,14 +209,14 @@ header::after {
 }
 
 .site__nav a:hover {
-  border: 1px solid #d8d8d8;
+  border: 1px solid rgb(216, 216, 216);
   font-weight: bold;
 }
 
 .site__nav a:focus {
   background-color: rgba(0, 0, 0, 0.596);
-  border: 1px solid white;
-  color: #ff6fd4;
+  border: 1px solid rgb(255, 255, 255);
+  color: rgb(255, 111, 212);
 }
 
 .site__nav--icon {
@@ -225,18 +225,22 @@ header::after {
   margin-right: 1.5rem;
   width: 3rem;
   text-align: right;
-  color: #d8d8d8;
+  color: rgb(216, 216, 216);
 }
 
 .menu-toggle {
   -webkit-backdrop-filter: blur(15rem);
           backdrop-filter: blur(15rem);
-  border: 2px solid #d8d8d8;
+  border: 2px solid rgb(216, 216, 216);
   border-radius: 3px;
-  padding: 1rem 1rem;
+  padding: 0.75rem 1rem 1.25rem;
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
+}
+
+.menu-toggle.menu-abierto {
+  padding: 1rem !important;
 }
 
 .menu-abierto .menu-hamburguesa {
@@ -252,8 +256,8 @@ header::after {
 }
 
 div.menu-hamburguesa {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
+  padding-top: 0.025rem;
+  padding-bottom: 0.2rem;
   height: 0.25rem;
 }
 
@@ -262,7 +266,7 @@ div.menu-hamburguesa {
 .menu-hamburguesa::after {
   content: "";
   display: block;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   height: 0.25rem;
   width: 1.5rem;
   border-radius: 0.5rem;
@@ -283,15 +287,12 @@ div.menu-hamburguesa {
     font-size: 0.5rem;
     margin-top: 1.1rem;
   }
-
   header {
     border: none;
   }
-
   .menu-toggle {
     display: none;
   }
-
   .site__nav {
     height: auto;
     position: relative;
@@ -305,28 +306,23 @@ div.menu-hamburguesa {
             clip-path: initial;
     text-align: center;
   }
-
   .site__nav li {
     display: inline-block;
     border: none;
   }
-
   .site__nav a {
     padding: 0;
     margin-top: 1.55rem;
     margin-left: 0.75rem;
   }
-
   .site__nav--icon {
     display: none;
   }
-
   .site__nav a:hover,
 .site__nav a:focus {
     background-color: transparent;
     border: none;
   }
-
   .site__nav ul {
     padding-top: 5%;
     list-style: none;
@@ -342,17 +338,17 @@ div.menu-hamburguesa {
   }
 }
 .btnPink {
-  background-color: #ff6fd4;
-  color: white;
+  background-color: rgb(255, 111, 212);
+  color: rgb(255, 255, 255);
 }
 
 .btnPink:hover {
-  background-color: #ad0963;
-  color: white;
+  background-color: rgb(173, 9, 99);
+  color: rgb(255, 255, 255);
 }
 
 h4 {
-  color: #ad0963;
+  color: rgb(173, 9, 99);
 }
 
 p {
@@ -360,7 +356,7 @@ p {
 }
 
 .form__contact {
-  color: white;
+  color: rgb(255, 255, 255);
   -webkit-backdrop-filter: blur(0.5rem);
           backdrop-filter: blur(0.5rem);
   background-color: rgba(0, 0, 0, 0.596);
@@ -402,8 +398,8 @@ p {
 }
 
 .modalForm {
-  color: black;
-  background-color: white;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
   background-size: contain;
   width: 70%;
   border-radius: 0.5rem;
@@ -421,13 +417,13 @@ p {
 }
 
 .servOfrecidos {
-  color: #ff6fd4;
-  background-color: #ff6fd4;
+  color: rgb(255, 111, 212);
+  background-color: rgb(255, 111, 212);
 }
 
 .form-check-input:checked {
-  background-color: #ad0963;
-  border-color: #5f5f5f;
+  background-color: rgb(173, 9, 99);
+  border-color: rgb(95, 95, 95);
 }
 
 .formuario__label {
@@ -443,7 +439,7 @@ p {
 
 .formulario__input {
   width: 100%;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border: 0.25rem solid transparent;
   border-radius: 0.35rem;
   height: 2.5rem;
@@ -454,7 +450,7 @@ p {
 
 .formulario__input--mensaje {
   width: 100%;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border: 0.25rem solid transparent;
   border-radius: 0.35rem;
   height: 5rem;
@@ -464,13 +460,13 @@ p {
 }
 
 .formulario__input--mensaje:focus {
-  border: 0.3rem solid #ff6fd4;
+  border: 0.3rem solid rgb(255, 111, 212);
   outline: none;
   box-shadow: 3px 0px 30px rgba(0, 0, 0, 0.596);
 }
 
 .formulario__input:focus {
-  border: 0.3rem solid #ff6fd4;
+  border: 0.3rem solid rgb(255, 111, 212);
   outline: none;
   box-shadow: 3px 0px 30px rgba(0, 0, 0, 0.596);
 }
@@ -479,7 +475,7 @@ p {
   font-size: 0.75rem;
   margin-bottom: 0;
   display: none;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .formulario__input-error-activo {
@@ -501,11 +497,11 @@ p {
   align-items: center;
   text-align: center;
   margin: auto;
-  background-color: #ad0963;
+  background-color: rgb(173, 9, 99);
   padding: 0 15px;
   border-radius: 3px;
   display: none;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .formulario__mensaje-activo {
@@ -517,26 +513,26 @@ p {
 }
 
 .formulario__entrada-correcto .formulario__validacion-estado {
-  color: #ff6fd4;
+  color: rgb(255, 111, 212);
   opacity: 1;
 }
 
 .formulario__entrada-incorrecto .formulario__label {
-  color: #ff6fd4;
+  color: rgb(255, 111, 212);
 }
 
 .formulario__entrada-incorrecto .formulario__validacion-estado {
-  color: #ad0963;
+  color: rgb(173, 9, 99);
   opacity: 1;
 }
 
 .formulario__entrada-incorrecto .formulario__input {
-  border: 3px solid #ad0963;
+  border: 3px solid rgb(173, 9, 99);
 }
 
 .recibir__novedades:focus {
-  background-color: #ff6fd4;
-  color: white;
+  background-color: rgb(255, 111, 212);
+  color: rgb(255, 255, 255);
 }
 
 .contBlurSobre {
@@ -550,7 +546,7 @@ p {
           backdrop-filter: blur(0.8rem);
   z-index: 0;
   border-radius: 0.25rem;
-  border: 0.15rem solid black;
+  border: 0.15rem solid rgb(0, 0, 0);
   box-shadow: 10px 10px 5px rgba(29, 29, 29, 0.247), 0px -10px 5px rgba(32, 32, 32, 0.199);
 }
 
@@ -591,19 +587,19 @@ p {
   padding: 10%;
   -webkit-backdrop-filter: blur(0.5rem);
           backdrop-filter: blur(0.5rem);
-  border: 2px solid white;
+  border: 2px solid rgb(255, 255, 255);
   border-radius: 0.25rem;
   align-items: center;
 }
 .flex__sobremi--hijo h1 {
   text-align: center;
-  color: #ff83c7;
+  color: rgb(255, 131, 199);
   font-weight: bold;
   padding-top: 10%;
 }
 .flex__sobremi--hijo p {
   text-align: left;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 0.85rem;
   font-weight: normal;
   text-justify: justify;
@@ -611,7 +607,7 @@ p {
 }
 .flex__sobremi--hijo a {
   text-decoration: none;
-  color: #ff6fd4;
+  color: rgb(255, 111, 212);
 }
 
 #logosSobreMi {
@@ -621,7 +617,7 @@ p {
   padding: 10%;
   -webkit-backdrop-filter: blur(0.5rem);
           backdrop-filter: blur(0.5rem);
-  border: 2px solid white;
+  border: 2px solid rgb(255, 255, 255);
   border-radius: 0.25rem;
   align-items: center;
 }
@@ -636,7 +632,7 @@ p {
   padding-left: 0;
   display: flex;
   box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   line-height: 1.4;
   border-radius: 5px;
   overflow: hidden;
@@ -671,7 +667,7 @@ p {
   margin: auto;
   transition: left 0.2s;
   background-color: rgba(0, 0, 0, 0.6);
-  color: #ff6fd4;
+  color: rgb(255, 111, 212);
   padding: 10px;
   width: 100%;
   font-size: 0.9rem;
@@ -688,7 +684,7 @@ p {
 }
 .blog-card .description {
   padding: 1rem;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   position: relative;
   z-index: 1;
 }
@@ -701,14 +697,14 @@ p {
   font-size: 1rem;
   font-weight: 300;
   text-transform: uppercase;
-  color: #ad0963;
+  color: rgb(173, 9, 99);
   margin-top: 5px;
 }
 .blog-card .description .read-more {
   text-align: right;
 }
 .blog-card .description .read-more a {
-  color: #ff6fd4;
+  color: rgb(255, 111, 212);
   display: inline-block;
   position: relative;
 }
@@ -732,7 +728,7 @@ p {
 .blog-card p:first-of-type:before {
   position: absolute;
   height: 5px;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   width: 35px;
   top: -0.75rem;
   border-radius: 3px;
@@ -754,7 +750,7 @@ p {
   .blog-card .description:before {
     transform: skewX(-3deg);
     content: "";
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     width: 30px;
     position: absolute;
     left: -10px;
@@ -777,16 +773,16 @@ p {
 
 .small-text {
   font-size: 12px;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 .h5__cards {
-  color: #ff6fd4;
+  color: rgb(255, 111, 212);
   font-weight: bold;
 }
 
 .linea {
-  background-color: #ad0963;
+  background-color: rgb(173, 9, 99);
   height: 0.25rem;
   width: 100%;
   display: block;
@@ -822,7 +818,7 @@ p {
 }
 
 #gallery h3 {
-  color: #ad0963;
+  color: rgb(173, 9, 99);
   text-align: center;
   justify-content: center;
 }
@@ -830,7 +826,7 @@ p {
 .grid-item {
   min-height: auto;
   min-width: 100%;
-  border: 0.15rem solid white;
+  border: 0.15rem solid rgb(255, 255, 255);
   border-radius: 0.2rem;
   -webkit-backdrop-filter: blur(0.15rem);
           backdrop-filter: blur(0.15rem);
@@ -909,11 +905,9 @@ p {
   .grid-container {
     grid-template-columns: 1fr;
   }
-
   #gallery {
     margin: -10% 5% 10% 5%;
   }
-
   .grid-item {
     height: 15rem;
   }
@@ -922,15 +916,12 @@ p {
   .grid-container {
     grid-template-columns: 1fr 1fr;
   }
-
   #gallery {
     margin: -5% 2% 5% 2%;
   }
-
   .grid-item {
     height: 15rem;
   }
-
   .item9 {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -940,38 +931,32 @@ p {
   .grid-container {
     grid-template-columns: 1fr 1fr 1fr;
   }
-
   .grid-item {
     min-width: 5rem;
     min-height: 10rem;
   }
-
   .item1 {
     grid-row-start: 1;
     grid-row-end: 3;
   }
-
   .item2 {
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 3;
   }
-
   .item3 {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
   }
-
   .item4 {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 5;
   }
-
   #gallery {
     margin: -5% 2% 5% 2%;
   }
@@ -980,58 +965,50 @@ p {
   .grid-container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-
   .grid-item {
     min-width: 5rem;
     min-height: 10rem;
   }
-
   .item1 {
     grid-row-start: 1;
     grid-row-end: 3;
   }
-
   .item2 {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 4;
   }
-
   .item3 {
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
   }
-
   .item4 {
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 1;
     grid-row-end: 4;
   }
-
   .item8 {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 5;
   }
-
   .item9 {
     grid-column-start: 3;
     grid-column-end: 5;
     grid-row-start: 4;
     grid-row-end: 5;
   }
-
   #gallery {
     margin: -2% 2% 5% 2%;
   }
 }
 footer {
-  color: white;
+  color: rgb(255, 255, 255);
   background-image: url(../images/probando-fondo4.jpg);
   background-size: cover;
   background-position-x: center;
@@ -1050,14 +1027,14 @@ footer div {
 footer div p {
   text-align: center;
   align-content: space-around;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 footer div p a {
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 footer div p a:hover {
-  color: #ff83c7;
+  color: rgb(255, 131, 199);
 }
 footer .fab {
   font-size: 2rem;
@@ -1065,7 +1042,7 @@ footer .fab {
   padding-bottom: 2rem;
 }
 footer .fab:hover {
-  color: #ff83c7;
+  color: rgb(255, 131, 199);
 }
 
 @media only screen and (min-width: 1024px) {
@@ -1073,7 +1050,6 @@ footer .fab:hover {
     font-size: 1.5rem;
     margin-top: 1.1rem;
   }
-
   .site__nav a {
     padding: 0;
     margin-top: 1.6rem;
