@@ -240,7 +240,7 @@ header::after {
 }
 
 .menu-toggle.menu-abierto {
-  padding: 1rem !important;
+  padding: 1.2rem 1rem 0.8rem !important;
 }
 
 .menu-abierto .menu-hamburguesa {
